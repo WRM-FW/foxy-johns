@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="fireLight" cx="60%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4a2511"/>
+      <stop offset="60%" stop-color="#21130b"/>
+      <stop offset="100%" stop-color="#0f0906"/>
+    </radialGradient>
+    <linearGradient id="fiddleWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c67d3d"/>
+      <stop offset="50%" stop-color="#8f4a18"/>
+      <stop offset="100%" stop-color="#542407"/>
+    </linearGradient>
+    <linearGradient id="bodhranSkin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5ecd5"/>
+      <stop offset="100%" stop-color="#cfbe97"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#fireLight)"/>
+
+  <!-- Musical Notes floating in the air -->
+  <g fill="#d4af37" opacity="0.35">
+    <!-- Note 1 -->
+    <circle cx="150" cy="120" r="8"/>
+    <rect x="156" y="70" width="4" height="50"/>
+    <path d="M 160,70 Q 180,65 185,85" stroke="#d4af37" stroke-width="4" fill="none"/>
+    <!-- Note 2 -->
+    <circle cx="280" cy="90" r="7"/>
+    <rect x="285" y="45" width="3" height="45"/>
+    <!-- Note 3 -->
+    <circle cx="620" cy="140" r="9"/>
+    <circle cx="660" cy="120" r="9"/>
+    <rect x="627" y="80" width="4" height="60"/>
+    <rect x="667" y="60" width="4" height="60"/>
+    <polygon points="627,80 671,60 671,68 627,88"/>
+  </g>
+
+  <!-- The Bodhrán (Irish frame drum) -->
+  <g id="bodhran" transform="translate(180, 320)">
+    <!-- Wooden Outer Rim -->
+    <ellipse cx="0" cy="0" rx="130" ry="120" fill="#5c3818" stroke="#361f0a" stroke-width="8"/>
+    <!-- Goat Skin Drumhead -->
+    <ellipse cx="0" cy="0" rx="118" ry="108" fill="url(#bodhranSkin)" stroke="#9c835c" stroke-width="2"/>
+    <!-- Taping / decorative studs -->
+    <ellipse cx="0" cy="0" rx="124" ry="114" fill="none" stroke="#222" stroke-width="3" stroke-dasharray="6,8"/>
+    <!-- Tipper / Beater resting across -->
+    <line x1="-90" y1="60" x2="90" y2="-60" stroke="#75471f" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="-85" cy="57" r="10" fill="#a8713d"/>
+    <circle cx="85" cy="-57" r="10" fill="#a8713d"/>
+  </g>
+
+  <!-- The Irish Fiddle & Bow -->
+  <g id="fiddle" transform="translate(480, 280) rotate(-25)">
+    <!-- Body Back & Front -->
+    <path d="M -40,-80 C -70,-80 -70,-20 -45,0 C -60,20 -60,70 -35,90 C -10,105 10,105 35,90 C 60,70 60,20 45,0 C 70,-20 70,-80 40,-80 Z" fill="url(#fiddleWood)" stroke="#381503" stroke-width="4"/>
+    <!-- F-holes -->
+    <path d="M -22,-30 C -25,-15 -18,-5 -22,10" stroke="#220b00" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <path d="M 22,-30 C 25,-15 18,-5 22,10" stroke="#220b00" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <!-- Bridge -->
+    <rect x="-14" y="-8" width="28" height="6" fill="#f5ecd5" stroke="#5a3d28" stroke-width="1.5"/>
+    <!-- Fingerboard -->
+    <polygon points="-8,-80 8,-80 12,20 -12,20" fill="#1a1410"/>
+    <!-- Neck & Scroll -->
+    <rect x="-6" y="-150" width="12" height="70" fill="#8f4a18"/>
+    <path d="M -12,-175 C -12,-190 12,-190 12,-175 C 12,-160 -12,-160 -12,-150" fill="#8f4a18" stroke="#381503" stroke-width="2"/>
+    <!-- Pegs -->
+    <line x1="-22" y1="-165" x2="22" y2="-165" stroke="#1a1410" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-22" y1="-155" x2="22" y2="-155" stroke="#1a1410" stroke-width="4" stroke-linecap="round"/>
+    <!-- Tailpiece -->
+    <polygon points="-10,85 10,85 4,105 -4,105" fill="#1a1410"/>
+    <!-- Strings -->
+    <line x1="-4" y1="-150" x2="-3" y2="85" stroke="#e0e0e0" stroke-width="1.2"/>
+    <line x1="-1.5" y1="-150" x2="-1" y2="85" stroke="#e0e0e0" stroke-width="1.2"/>
+    <line x1="1.5" y1="-150" x2="1" y2="85" stroke="#e0e0e0" stroke-width="1.2"/>
+    <line x1="4" y1="-150" x2="3" y2="85" stroke="#e0e0e0" stroke-width="1.2"/>
+
+    <!-- Fiddle Bow lying beside -->
+    <line x1="-80" y1="-140" x2="80" y2="160" stroke="#75471f" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-82" y1="-138" x2="78" y2="162" stroke="#faf6ee" stroke-width="1.5" opacity="0.8"/>
+  </g>
+
+  <!-- Tin Whistle resting nearby -->
+  <g transform="translate(360, 420) rotate(50)">
+    <rect x="0" y="0" width="16" height="180" rx="3" fill="#d0d7de" stroke="#606770" stroke-width="1.5"/>
+    <path d="M 0,0 L 16,0 L 12,-20 L 4,-20 Z" fill="#111"/>
+    <!-- Tone holes -->
+    <circle cx="8" cy="40" r="3" fill="#111"/>
+    <circle cx="8" cy="65" r="3" fill="#111"/>
+    <circle cx="8" cy="90" r="3" fill="#111"/>
+    <circle cx="8" cy="115" r="3" fill="#111"/>
+    <circle cx="8" cy="140" r="3" fill="#111"/>
+    <circle cx="8" cy="165" r="3" fill="#111"/>
+  </g>
+
+  <!-- Pint of Stout by the musicians -->
+  <g transform="translate(620, 360)">
+    <path d="M 0,10 L 6,80 Q 6,88 15,88 Q 24,88 24,80 L 30,10 Z" fill="#120f0c" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <path d="M -1,10 Q 15,6 31,10 L 30,24 Q 15,20 0,24 Z" fill="#faf5e6"/>
+  </g>
+
+  <!-- Text Banner -->
+  <rect x="150" y="520" width="500" height="50" rx="25" fill="#143425" stroke="#d4af37" stroke-width="2"/>
+  <text x="400" y="552" font-family="'Playfair Display', serif" font-size="20" font-weight="700" fill="#f5d77f" text-anchor="middle" letter-spacing="2">
+    Nightly Trad Sessions &amp; Dingle Craic
+  </text>
+</svg>

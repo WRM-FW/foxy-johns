@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="fireWarmth" cx="50%" cy="65%" r="60%">
+      <stop offset="0%" stop-color="#ff7a18" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#b83808" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#4a1806" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#140d09" stop-opacity="0.95"/>
+    </radialGradient>
+    <linearGradient id="stoneHearth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#544c45"/>
+      <stop offset="100%" stop-color="#2b2622"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="#1a130e"/>
+
+  <!-- Warm ambient glow of the turf fire -->
+  <rect width="800" height="600" fill="url(#fireWarmth)"/>
+
+  <!-- Stone Fireplace Structure -->
+  <rect x="250" y="160" width="300" height="340" fill="url(#stoneHearth)" stroke="#1a1512" stroke-width="4"/>
+  <!-- Fireplace Opening (Arch) -->
+  <path d="M 310,480 L 310,320 Q 400,280 490,320 L 490,480 Z" fill="#110a06" stroke="#26170d" stroke-width="4"/>
+  <!-- Heavy Timber Mantelpiece -->
+  <rect x="220" y="140" width="360" height="30" rx="3" fill="#4a2f18" stroke="#2b1809" stroke-width="2"/>
+
+  <!-- Burning Irish Peat / Turf Sods -->
+  <g id="peatFire" transform="translate(400, 440)">
+    <!-- Peat Sods (dark organic blocks) -->
+    <rect x="-65" y="10" width="55" height="20" rx="2" fill="#2d170b" stroke="#170a04" stroke-width="1.5"/>
+    <rect x="-15" y="12" width="60" height="18" rx="2" fill="#381d0e" stroke="#170a04" stroke-width="1.5"/>
+    <rect x="-40" y="-8" width="70" height="22" rx="2" fill="#291207" stroke="#170a04" stroke-width="1.5"/>
+
+    <!-- Glowing Red/Orange Embers -->
+    <ellipse cx="0" cy="22" rx="70" ry="12" fill="#ff4d00" opacity="0.8" filter="blur(4px)"/>
+    <ellipse cx="0" cy="20" rx="50" ry="8" fill="#ffbb00" opacity="0.9" filter="blur(2px)"/>
+
+    <!-- Flames -->
+    <path d="M -30,10 Q -40,-40 -15,-65 Q 0,-30 -5,10 Z" fill="#ff7700" opacity="0.85"/>
+    <path d="M 0,10 Q 15,-50 25,-75 Q 10,-35 5,10 Z" fill="#ffaa00" opacity="0.9"/>
+    <path d="M -15,10 Q 0,-60 5,-90 Q 20,-45 10,10 Z" fill="#ffdd33" opacity="0.95"/>
+    <path d="M -5,10 Q 0,-30 2,-45 Q 8,-25 5,10 Z" fill="#ffffff" opacity="0.9"/>
+  </g>
+
+  <!-- Items on Mantelpiece -->
+  <g transform="translate(250, 100)">
+    <!-- Whiskey Bottle: Redbreast / Dingle Single Malt -->
+    <rect x="50" y="0" width="22" height="40" rx="2" fill="#b06c28" stroke="#5e350d" stroke-width="1.5"/>
+    <rect x="57" y="-12" width="8" height="12" fill="#b06c28"/>
+    <rect x="53" y="10" width="16" height="20" fill="#faf6ee"/>
+    <!-- Brass Candleholder & Flame -->
+    <rect x="180" y="20" width="24" height="20" fill="#d4af37" stroke="#876d1e" stroke-width="1.5"/>
+    <rect x="189" y="-5" width="6" height="25" fill="#fdfcf7"/>
+    <ellipse cx="192" cy="-12" rx="4" ry="7" fill="#ffb700"/>
+    <!-- Old Brass Clock -->
+    <circle cx="270" cy="20" r="18" fill="#d4af37" stroke="#785f17" stroke-width="2"/>
+    <circle cx="270" cy="20" r="14" fill="#faf5e6"/>
+  </g>
+
+  <!-- Snug Wooden Partition & Bench (Left foreground) -->
+  <g id="snugPartition">
+    <rect x="0" y="0" width="180" height="600" fill="#3a2211" stroke="#211208" stroke-width="4"/>
+    <!-- Wood Panelling Detail -->
+    <rect x="20" y="60" width="140" height="180" fill="#2b180a" stroke="#190d05" stroke-width="2"/>
+    <rect x="20" y="280" width="140" height="260" fill="#2b180a" stroke="#190d05" stroke-width="2"/>
+    <!-- Small Drinks Hatch Shelf in Snug -->
+    <rect x="140" y="320" width="60" height="16" fill="#4d2f19" stroke="#190d05" stroke-width="2"/>
+    <!-- Pint sitting on the snug hatch -->
+    <path d="M 155,275 L 160,320 L 175,320 L 180,275 Z" fill="#120f0c" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <rect x="154" y="273" width="28" height="7" fill="#faf5e6"/>
+  </g>
+
+  <!-- Banner -->
+  <rect x="150" y="525" width="500" height="48" rx="24" fill="#143425" stroke="#d4af37" stroke-width="2"/>
+  <text x="400" y="555" font-family="'Playfair Display', serif" font-size="19" font-weight="700" fill="#f5d77f" text-anchor="middle" letter-spacing="2">
+    The Snug &amp; Roaring Peat Fire
+  </text>
+</svg>

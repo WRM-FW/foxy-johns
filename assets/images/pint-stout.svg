@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="hearthGlow" cx="50%" cy="80%" r="70%">
+      <stop offset="0%" stop-color="#4a2e16"/>
+      <stop offset="50%" stop-color="#1d1712"/>
+      <stop offset="100%" stop-color="#0d0a08"/>
+    </radialGradient>
+    <linearGradient id="stoutGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a0807"/>
+      <stop offset="35%" stop-color="#181310"/>
+      <stop offset="50%" stop-color="#2d1a0e"/>
+      <stop offset="65%" stop-color="#181310"/>
+      <stop offset="100%" stop-color="#080605"/>
+    </linearGradient>
+    <linearGradient id="creamyHead" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#fcf7ee"/>
+      <stop offset="85%" stop-color="#f0e2cd"/>
+      <stop offset="100%" stop-color="#d9be9b"/>
+    </linearGradient>
+    <linearGradient id="glassReflection" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="15%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="85%" stop-color="#ffffff" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="foamGlow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Warm Bar Atmosphere -->
+  <rect width="600" height="800" fill="url(#hearthGlow)"/>
+
+  <!-- Bar Counter Wood Surface -->
+  <path d="M 0,660 L 600,660 L 600,800 L 0,800 Z" fill="#2c1a0e"/>
+  <path d="M 0,660 L 600,660 L 600,680 L 0,680 Z" fill="#442a17"/>
+  <line x1="0" y1="680" x2="600" y2="680" stroke="#1a0f08" stroke-width="3"/>
+
+  <!-- Coaster -->
+  <ellipse cx="300" cy="690" rx="140" ry="25" fill="#143425" stroke="#d4af37" stroke-width="3"/>
+  <ellipse cx="300" cy="690" rx="125" ry="20" fill="none" stroke="#d4af37" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="300" y="694" font-family="'Inter', sans-serif" font-size="10" font-weight="800" fill="#f5d77f" text-anchor="middle" letter-spacing="3">FOXY JOHN'S • DINGLE</text>
+
+  <!-- Pint Glass Shadow -->
+  <ellipse cx="300" cy="675" rx="80" ry="14" fill="#000" opacity="0.6"/>
+
+  <!-- Pint Glass & Liquid -->
+  <g transform="translate(300, 410)">
+    <!-- Liquid Body -->
+    <path d="M -90,-220 L -68,230 Q -68,255 0,255 Q 68,255 68,230 L 90,-220 Z" fill="url(#stoutGrad)"/>
+
+    <!-- Subtle Ruby Red Glow at edge (classic Guinness test against light) -->
+    <path d="M -86,-200 L -66,220 Q -66,240 -35,248 L -42,210 L -62,-190 Z" fill="#8a2010" opacity="0.4"/>
+
+    <!-- Creamy Foam Head with Dome Top -->
+    <g filter="url(#foamGlow)">
+      <!-- Foam Body -->
+      <path d="M -92,-220 Q 0,-235 92,-220 L 90,-165 Q 0,-175 -90,-165 Z" fill="url(#creamyHead)"/>
+      <!-- Dome Top -->
+      <ellipse cx="0" cy="-220" rx="92" ry="16" fill="#fffdfa"/>
+      <!-- Shamrock in Foam -->
+      <g transform="translate(0, -220) scale(0.9)">
+        <!-- Top Leaf -->
+        <path d="M 0,-12 C -8,-24 8,-24 0,-12 Z" fill="#9e8465" opacity="0.65"/>
+        <path d="M -2,-13 C -10,-20 -4,-26 0,-18 C 4,-26 10,-20 2,-13 Z" fill="#a89073" opacity="0.8"/>
+        <!-- Left Leaf -->
+        <path d="M -3,-10 C -12,-16 -16,-5 -7,-4 C -16,4 -10,12 -3,-2 Z" fill="#a89073" opacity="0.8"/>
+        <!-- Right Leaf -->
+        <path d="M 3,-10 C 12,-16 16,-5 7,-4 C 16,4 10,12 3,-2 Z" fill="#a89073" opacity="0.8"/>
+        <!-- Stem -->
+        <path d="M 0,-3 Q 2,8 5,14" stroke="#a89073" stroke-width="2" fill="none" opacity="0.8"/>
+      </g>
+    </g>
+
+    <!-- Glass Highlights & Specular Reflection -->
+    <path d="M -94,-220 L -72,230 Q -72,260 0,260 Q 72,260 72,230 L 94,-220 Z" fill="url(#glassReflection)" stroke="rgba(255,255,255,0.4)" stroke-width="3"/>
+    <!-- Left Glass Specular Glare -->
+    <path d="M -85,-200 L -66,210" stroke="rgba(255,255,255,0.3)" stroke-width="6" stroke-linecap="round"/>
+    <!-- Heavy Solid Base of Irish Tumbler -->
+    <path d="M -68,230 Q -68,260 0,260 Q 68,260 68,230 L 66,242 Q 66,266 0,266 Q -66,266 -66,242 Z" fill="rgba(255,255,255,0.2)"/>
+
+    <!-- Condensation Drops -->
+    <circle cx="-50" cy="-50" r="2.5" fill="rgba(255,255,255,0.5)"/>
+    <circle cx="-46" cy="-40" r="1.5" fill="rgba(255,255,255,0.5)"/>
+    <circle cx="55" cy="20" r="2.5" fill="rgba(255,255,255,0.5)"/>
+    <circle cx="52" cy="35" r="3" fill="rgba(255,255,255,0.5)"/>
+    <circle cx="-35" cy="110" r="2.5" fill="rgba(255,255,255,0.5)"/>
+  </g>
+
+  <!-- Typography caption at bottom -->
+  <text x="300" y="760" font-family="'Playfair Display', serif" font-size="20" font-weight="700" fill="#d4af37" text-anchor="middle" letter-spacing="2">
+    The Perfect Pour on Main Street
+  </text>
+  <text x="300" y="780" font-family="'Inter', sans-serif" font-size="12" fill="#dcd3c1" text-anchor="middle">
+    "The nicest pint of Guinness in Dingle" • Poured with 120 Years of Craft
+  </text>
+</svg>

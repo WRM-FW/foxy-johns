@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="goldGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5d77f"/>
+      <stop offset="60%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#9a7b1c"/>
+    </radialGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#143425"/>
+      <stop offset="100%" stop-color="#0a1d15"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <!-- Outer circle -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="8"/>
+  <circle cx="200" cy="200" r="172" fill="none" stroke="#d4af37" stroke-width="2" stroke-dasharray="6,4"/>
+  <circle cx="200" cy="200" r="140" fill="#0d241a" stroke="url(#goldGrad)" stroke-width="4"/>
+
+  <!-- Curved Text Path -->
+  <path id="topCurve" d="M 50,200 A 150,150 0 0,1 350,200" fill="none"/>
+  <path id="bottomCurve" d="M 345,205 A 145,145 0 0,1 55,205" fill="none"/>
+
+  <text font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="900" fill="url(#goldGrad)" letter-spacing="4">
+    <textPath href="#topCurve" startOffset="50%" text-anchor="middle">FOXY JOHN'S</textPath>
+  </text>
+  <text font-family="'Inter', -apple-system, sans-serif" font-size="14" font-weight="700" fill="#f5d77f" letter-spacing="3">
+    <textPath href="#bottomCurve" startOffset="50%" text-anchor="middle">DINGLE • CO. KERRY • 1899</textPath>
+  </text>
+
+  <!-- Center Artwork: Crossed Wrench & Pint of Stout -->
+  <g transform="translate(200, 200)">
+    <!-- Crossed Spanner / Wrench -->
+    <g transform="rotate(-35) translate(-10, -55)">
+      <rect x="6" y="10" width="8" height="90" rx="4" fill="#a0aab2" stroke="#5a6268" stroke-width="2"/>
+      <path d="M 3,18 C 3,5 17,5 17,18 L 13,18 C 13,10 7,10 7,18 Z" fill="#d0d7de" stroke="#5a6268" stroke-width="2"/>
+      <circle cx="10" cy="95" r="9" fill="none" stroke="#5a6268" stroke-width="4"/>
+    </g>
+    <!-- Pint Glass -->
+    <g transform="translate(-16, -45)">
+      <!-- Pint body -->
+      <path d="M 4,12 L 8,72 Q 8,82 16,82 Q 24,82 24,72 L 28,12 Z" fill="#151210" stroke="#d4af37" stroke-width="2"/>
+      <!-- Stout creamy head -->
+      <path d="M 2,12 Q 16,7 30,12 L 29,24 Q 16,21 3,24 Z" fill="#faf6ee" stroke="#d4af37" stroke-width="1.5"/>
+      <!-- Shamrock on foam -->
+      <circle cx="16" cy="18" r="2.5" fill="#143425"/>
+      <circle cx="13" cy="21" r="2.5" fill="#143425"/>
+      <circle cx="19" cy="21" r="2.5" fill="#143425"/>
+      <path d="M 16,20 L 16,26" stroke="#143425" stroke-width="1.2"/>
+    </g>
+    <!-- Subtitle Banner -->
+    <rect x="-85" y="48" width="170" height="24" rx="12" fill="#143425" stroke="url(#goldGrad)" stroke-width="2"/>
+    <text x="0" y="64" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#f5d77f" text-anchor="middle" letter-spacing="2">PUB &amp; HARDWARE</text>
+  </g>
+</svg>

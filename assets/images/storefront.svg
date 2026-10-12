@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a6984"/>
+      <stop offset="60%" stop-color="#8ba4b8"/>
+      <stop offset="100%" stop-color="#d4e0e8"/>
+    </linearGradient>
+    <linearGradient id="pubGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#184331"/>
+      <stop offset="100%" stop-color="#0f2b1f"/>
+    </linearGradient>
+    <linearGradient id="wallPlaster" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ece6d8"/>
+      <stop offset="100%" stop-color="#ded5c2"/>
+    </linearGradient>
+    <linearGradient id="goldText" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf1a9"/>
+      <stop offset="60%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#9a7b1c"/>
+    </linearGradient>
+    <filter id="fasciaShadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <pattern id="subwayTiles" width="20" height="10" patternUnits="userSpaceOnUse">
+      <rect width="20" height="10" fill="#1e1e1e"/>
+      <rect x="0.5" y="0.5" width="19" height="9" fill="#141414" stroke="#444" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky & Dingle Atmosphere -->
+  <rect x="0" y="0" width="1200" height="350" fill="url(#skyGrad)"/>
+
+  <!-- Distant Kerry Mountains & Town Roofs -->
+  <path d="M 0,220 Q 200,160 450,210 T 850,180 T 1200,220 L 1200,350 L 0,350 Z" fill="#718698" opacity="0.4"/>
+  <path d="M 0,250 Q 280,200 600,240 T 1200,230 L 1200,350 L 0,350 Z" fill="#586c7d" opacity="0.5"/>
+
+  <!-- Upper Building Wall (Cream Irish Render) -->
+  <rect x="100" y="160" width="1000" height="260" fill="url(#wallPlaster)"/>
+
+  <!-- Traditional Sash Windows on 1st Floor -->
+  <g id="firstFloorWindows">
+    <!-- Window 1 -->
+    <rect x="220" y="210" width="110" height="160" fill="#2b231c" rx="4"/>
+    <rect x="228" y="218" width="94" height="144" fill="#0f2b1f"/>
+    <rect x="234" y="224" width="38" height="60" fill="#bdd3de" opacity="0.85"/>
+    <rect x="278" y="224" width="38" height="60" fill="#bdd3de" opacity="0.85"/>
+    <rect x="234" y="294" width="38" height="64" fill="#bdd3de" opacity="0.75"/>
+    <rect x="278" y="294" width="38" height="64" fill="#bdd3de" opacity="0.75"/>
+    <rect x="210" y="370" width="130" height="12" fill="#ded5c2" stroke="#b8ab96" stroke-width="2"/>
+
+    <!-- Window 2 (Center) -->
+    <rect x="545" y="210" width="110" height="160" fill="#2b231c" rx="4"/>
+    <rect x="553" y="218" width="94" height="144" fill="#0f2b1f"/>
+    <rect x="559" y="224" width="38" height="60" fill="#bdd3de" opacity="0.85"/>
+    <rect x="603" y="224" width="38" height="60" fill="#bdd3de" opacity="0.85"/>
+    <rect x="559" y="294" width="38" height="64" fill="#bdd3de" opacity="0.75"/>
+    <rect x="603" y="294" width="38" height="64" fill="#bdd3de" opacity="0.75"/>
+    <rect x="535" y="370" width="130" height="12" fill="#ded5c2" stroke="#b8ab96" stroke-width="2"/>
+
+    <!-- Window 3 -->
+    <rect x="870" y="210" width="110" height="160" fill="#2b231c" rx="4"/>
+    <rect x="878" y="218" width="94" height="144" fill="#0f2b1f"/>
+    <rect x="884" y="224" width="38" height="60" fill="#bdd3de" opacity="0.85"/>
+    <rect x="928" y="224" width="38" height="60" fill="#bdd3de" opacity="0.85"/>
+    <rect x="884" y="294" width="38" height="64" fill="#bdd3de" opacity="0.75"/>
+    <rect x="928" y="294" width="38" height="64" fill="#bdd3de" opacity="0.75"/>
+    <rect x="860" y="370" width="130" height="12" fill="#ded5c2" stroke="#b8ab96" stroke-width="2"/>
+  </g>
+
+  <!-- Ground Level Street / Pavement -->
+  <rect x="0" y="700" width="1200" height="100" fill="#383d42"/>
+  <rect x="0" y="700" width="1200" height="16" fill="#52585e"/>
+  <!-- Street stones texture -->
+  <line x1="0" y1="730" x2="1200" y2="730" stroke="#2b2f33" stroke-width="2" stroke-dasharray="60,20"/>
+  <line x1="0" y1="760" x2="1200" y2="760" stroke="#2b2f33" stroke-width="2" stroke-dasharray="40,30"/>
+
+  <!-- Plinth Subway Tiles (Famous black & white base of Foxy John's) -->
+  <rect x="110" y="650" width="980" height="50" fill="url(#subwayTiles)" stroke="#222" stroke-width="2"/>
+
+  <!-- Main Pub Fascia & Cornice -->
+  <g filter="url(#fasciaShadow)">
+    <rect x="100" y="400" width="1000" height="26" fill="#0c1f17"/>
+    <rect x="110" y="420" width="980" height="85" fill="url(#pubGreen)" stroke="#d4af37" stroke-width="3"/>
+    <rect x="105" y="415" width="990" height="8" fill="#d4af37"/>
+  </g>
+
+  <!-- Hand-Lettered Traditional Pub Sign: FOXY JOHN'S -->
+  <text x="600" y="478" font-family="'Playfair Display', Georgia, serif" font-size="52" font-weight="900" fill="url(#goldText)" text-anchor="middle" letter-spacing="8" stroke="#10251a" stroke-width="1.5">
+    FOXY JOHN'S
+  </text>
+  <text x="600" y="497" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#f5d77f" text-anchor="middle" letter-spacing="4">
+    BAR • HARDWARE • BICYCLE HIRE • EST. 1899
+  </text>
+
+  <!-- Shopfront Structure (Columns & Bay Windows) -->
+  <!-- Left Window: The Hardware Side -->
+  <g id="hardwareWindow">
+    <rect x="130" y="515" width="320" height="135" fill="#0b1e15" stroke="#1c4735" stroke-width="6"/>
+    <!-- Window Glass -->
+    <rect x="136" y="521" width="308" height="123" fill="#1b2e25" opacity="0.95"/>
+    <!-- Shelves visible inside window -->
+    <line x1="140" y1="560" x2="440" y2="560" stroke="#4a3b2c" stroke-width="4"/>
+    <line x1="140" y1="600" x2="440" y2="600" stroke="#4a3b2c" stroke-width="4"/>
+    <!-- Tool silhouettes in window display -->
+    <!-- Hanging Spanner -->
+    <path d="M 160,530 L 160,555" stroke="#8a9ba8" stroke-width="5"/>
+    <circle cx="160" cy="532" r="5" fill="none" stroke="#8a9ba8" stroke-width="3"/>
+    <!-- Hanging Saw -->
+    <path d="M 200,530 L 220,555 L 200,555 Z" fill="#9daab6" opacity="0.8"/>
+    <!-- Boxes of Nails -->
+    <rect x="250" y="542" width="28" height="16" fill="#c28b53" stroke="#8c5826" stroke-width="1.5"/>
+    <rect x="285" y="540" width="32" height="18" fill="#a6723e" stroke="#8c5826" stroke-width="1.5"/>
+    <rect x="325" y="538" width="36" height="20" fill="#c28b53" stroke="#8c5826" stroke-width="1.5"/>
+    <!-- Bicycle Wheel silhouette in window -->
+    <circle cx="400" cy="565" r="30" fill="none" stroke="#7e8c99" stroke-width="3"/>
+    <circle cx="400" cy="565" r="4" fill="#7e8c99"/>
+    <!-- Gold Window Lettering -->
+    <text x="290" y="625" font-family="'Playfair Display', serif" font-size="15" font-weight="700" fill="#d4af37" text-anchor="middle" letter-spacing="2">
+      HARDWARE &amp; TOOLS
+    </text>
+  </g>
+
+  <!-- Center Entrance: Traditional Red Heritage Pub Door -->
+  <g id="pubEntrance">
+    <rect x="475" y="505" width="130" height="195" fill="#184331" stroke="#0c1f17" stroke-width="6"/>
+    <!-- Red Door Frame & Panels -->
+    <rect x="485" y="515" width="110" height="180" fill="#9e2a2b" stroke="#681819" stroke-width="3"/>
+    <!-- Glass upper panel -->
+    <rect x="495" y="525" width="90" height="75" fill="#bdd3de" opacity="0.75" stroke="#681819" stroke-width="2"/>
+    <line x1="540" y1="525" x2="540" y2="600" stroke="#681819" stroke-width="2"/>
+    <line x1="495" y1="562" x2="585" y2="562" stroke="#681819" stroke-width="2"/>
+    <!-- Lower solid panels -->
+    <rect x="495" y="615" width="40" height="70" fill="#7d1f20" stroke="#521314" stroke-width="2"/>
+    <rect x="545" y="615" width="40" height="70" fill="#7d1f20" stroke="#521314" stroke-width="2"/>
+    <!-- Brass Doorknob & Letterbox -->
+    <circle cx="505" cy="610" r="5" fill="#d4af37" stroke="#9a7b1c" stroke-width="1"/>
+    <rect x="525" y="640" width="30" height="8" rx="2" fill="#d4af37" stroke="#9a7b1c" stroke-width="1"/>
+    <!-- Door Step -->
+    <rect x="465" y="695" width="150" height="8" fill="#b0b0b0" stroke="#777" stroke-width="1"/>
+  </g>
+
+  <!-- Right Window: The Pub & Snug Side -->
+  <g id="pubWindow">
+    <rect x="625" y="515" width="445" height="135" fill="#0b1e15" stroke="#1c4735" stroke-width="6"/>
+    <rect x="631" y="521" width="433" height="123" fill="#19251e" opacity="0.95"/>
+    <!-- Interior Warm Amber Light & Snug Window View -->
+    <rect x="635" y="525" width="425" height="115" fill="#2d2214" opacity="0.6"/>
+    <!-- Window Glazing Bars -->
+    <line x1="772" y1="521" x2="772" y2="644" stroke="#1c4735" stroke-width="4"/>
+    <line x1="915" y1="521" x2="915" y2="644" stroke="#1c4735" stroke-width="4"/>
+    <line x1="631" y1="582" x2="1064" y2="582" stroke="#1c4735" stroke-width="3"/>
+
+    <!-- Warm interior glow & silhouettes of pints and taps -->
+    <circle cx="700" cy="565" r="18" fill="#e5a93b" opacity="0.4" filter="blur(6px)"/>
+    <circle cx="840" cy="565" r="22" fill="#e5a93b" opacity="0.5" filter="blur(6px)"/>
+    <circle cx="990" cy="565" r="18" fill="#e5a93b" opacity="0.4" filter="blur(6px)"/>
+
+    <!-- Gold Window Signage -->
+    <text x="700" y="625" font-family="'Playfair Display', serif" font-size="14" font-weight="700" fill="#d4af37" text-anchor="middle" letter-spacing="2">
+      FINE ALES &amp; STOUT
+    </text>
+    <text x="843" y="625" font-family="'Playfair Display', serif" font-size="15" font-weight="700" fill="#d4af37" text-anchor="middle" letter-spacing="3">
+      THE SNUG
+    </text>
+    <text x="990" y="625" font-family="'Playfair Display', serif" font-size="14" font-weight="700" fill="#d4af37" text-anchor="middle" letter-spacing="2">
+      IRISH WHISKEY
+    </text>
+  </g>
+
+  <!-- Hanging Blade Sign (Projecting Street Sign) -->
+  <g id="projectingSign" transform="translate(100, 370)">
+    <!-- Wrought iron bracket -->
+    <path d="M 0,20 Q 30,0 60,10 T 80,30" fill="none" stroke="#222" stroke-width="5"/>
+    <line x1="70" y1="20" x2="70" y2="50" stroke="#333" stroke-width="3"/>
+    <line x1="120" y1="20" x2="120" y2="50" stroke="#333" stroke-width="3"/>
+    <!-- Sign Board -->
+    <rect x="50" y="45" width="90" height="110" rx="8" fill="#143425" stroke="#d4af37" stroke-width="3"/>
+    <!-- Pint icon on sign -->
+    <path d="M 85,75 L 88,105 Q 88,110 95,110 Q 102,110 102,105 L 105,75 Z" fill="#12100e" stroke="#d4af37" stroke-width="1.5"/>
+    <rect x="83" y="73" width="24" height="6" fill="#faf6ee" rx="2"/>
+    <text x="95" y="132" font-family="'Playfair Display', serif" font-size="11" font-weight="900" fill="#d4af37" text-anchor="middle">FOXY'S</text>
+  </g>
+
+  <!-- Exterior Lanterns -->
+  <g id="lanternLeft" transform="translate(440, 480)">
+    <path d="M 0,0 L 20,0 L 15,35 L 5,35 Z" fill="#f7d070" opacity="0.9" stroke="#333" stroke-width="2"/>
+    <path d="M -5,-5 L 25,-5 L 20,0 L 0,0 Z" fill="#222"/>
+    <circle cx="10" cy="18" r="16" fill="#f7d070" opacity="0.3" filter="blur(8px)"/>
+  </g>
+  <g id="lanternRight" transform="translate(620, 480)">
+    <path d="M 0,0 L 20,0 L 15,35 L 5,35 Z" fill="#f7d070" opacity="0.9" stroke="#333" stroke-width="2"/>
+    <path d="M -5,-5 L 25,-5 L 20,0 L 0,0 Z" fill="#222"/>
+    <circle cx="10" cy="18" r="16" fill="#f7d070" opacity="0.3" filter="blur(8px)"/>
+  </g>
+</svg>
