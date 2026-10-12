@@ -86,7 +86,7 @@ function initLiveHours() {
       if (statusText) statusText.innerHTML = `<span class="status-indicator closed"></span> Currently Closed &bull; ${nextOpeningText}`;
       if (heroStatusBadge) {
         heroStatusBadge.className = 'hero-pill';
-        heroStatusBadge.textContent = `🔴 Closed &bull; ${nextOpeningText}`;
+        heroStatusBadge.textContent = `🔴 Closed • ${nextOpeningText}`;
       }
       if (mobStatusBadge) mobStatusBadge.textContent = 'Closed';
     }
