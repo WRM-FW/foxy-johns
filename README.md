@@ -2,6 +2,7 @@
 **Dingle, County Kerry, Ireland • Est. 1899**
 
 > **Live site:** <https://wrm-fw.github.io/foxy-johns/>
+> **Chinese documentation:** [README.zh-CN.md](./README.zh-CN.md) — project docs only; the site itself is English-only.
 
 > *"Where A Pint of Stout Meets A Box of Screws"*
 
@@ -53,7 +54,8 @@ foxy-johns/
 │   │   ├── snug-hearth.svg # The cozy private snug and roaring peat/turf fireplace
 │   │   └── favicon.svg     # Vector favicon for browser tabs and mobile bookmarks
 ├── .nojekyll               # Disables Jekyll processing on GitHub Pages
-└── README.md               # Documentation and deployment instructions
+├── README.md               # Documentation and deployment instructions (English)
+└── README.zh-CN.md         # Chinese project documentation (docs only, not served)
 ```
 
 ---
