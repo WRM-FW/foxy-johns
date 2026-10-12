@@ -1,6 +1,8 @@
 # Foxy John's — Official Website
 **Dingle, County Kerry, Ireland • Est. 1899**
 
+> **Live site:** <https://wrm-fw.github.io/foxy-johns/>
+
 > *"Where A Pint of Stout Meets A Box of Screws"*
 
 An authentic, responsive, mobile-first official website for the legendary **Foxy John's** on Main Street, Dingle, County Kerry, Ireland. Built with clean semantic HTML5, modern CSS3, and lightweight vanilla JavaScript, tailored for instant deployment on **GitHub Pages**.
@@ -41,7 +43,7 @@ foxy-johns/
 ├── js/
 │   └── main.js             # Live hours engine, mobile drawer, tabs, lightbox, fallbacks
 ├── assets/
-│   ├── images/
+│   └── images/
 │   │   ├── logo.svg        # Circular Foxy John's emblem with crossed spanner & pint
 │   │   ├── storefront.svg  # Vector illustration of the green & white heritage facade
 │   │   ├── pint-stout.svg  # Creamy Irish stout with shamrock head
@@ -50,7 +52,6 @@ foxy-johns/
 │   │   ├── bicycle.svg     # Touring bicycle on Slea Head Drive coastal route
 │   │   ├── snug-hearth.svg # The cozy private snug and roaring peat/turf fireplace
 │   │   └── favicon.svg     # Vector favicon for browser tabs and mobile bookmarks
-│   └── icons/              # Supporting iconography
 ├── .nojekyll               # Disables Jekyll processing on GitHub Pages
 └── README.md               # Documentation and deployment instructions
 ```
@@ -59,10 +60,12 @@ foxy-johns/
 
 ## 🚀 GitHub Pages Deployment Guide
 
-Deploying this site to GitHub Pages is fast and straightforward:
+Deploying this site to GitHub Pages is fast and straightforward. This repository is
+already live at <https://wrm-fw.github.io/foxy-johns/> (Pages → Source: *Deploy from a
+branch*, Branch: `main` / `/ (root)`). To host it elsewhere:
 
 ### Method 1: Deploying via GitHub Web Interface
-1. Unzip `foxy-johns-website.zip`.
+1. Clone or copy this repository.
 2. Create a new GitHub repository (e.g. `foxy-johns` or `<your-username>.github.io`).
 3. Push or drag-and-drop the contents of `foxy-johns/` directly into the repository root.
 4. In your GitHub repository, navigate to **Settings** &rarr; **Pages**.
