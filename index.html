@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Foxy John's | Traditional Irish Pub, Hardware Store & Bicycle Hire • Dingle, Kerry</title>
+  
+  <meta name="description" content="Official website for Foxy John's in Dingle, Co. Kerry, Ireland. Established in 1899 — half traditional Irish pub, half working hardware store and bicycle hire. Discover our creamy pints of Guinness, nightly trad music sessions, snug, and peat fire.">
+  <meta name="keywords" content="Foxy Johns, Foxy John's Dingle, Irish pub hardware store, Dingle pubs, Guinness Dingle, Dingle trad sessions, Slea Head bicycle hire, Kerry pubs">
+  <meta name="theme-color" content="#0e291d">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Foxy John's | Traditional Pub & Hardware Store • Dingle, Ireland">
+  <meta property="og:description" content="Dingle's legendary establishment since 1899: grab a spanner, pull up a stool for a pint of stout, and warm by the turf fire.">
+  <meta property="og:image" content="./assets/images/storefront.svg">
+  <meta property="og:url" content="https://www.google.com/maps/place/Foxy+John's/@52.1420387,-10.27182,17z/data=!3m1!4b1!4m6!3m5!1s0x484ffbc6a20a3047:0x2a60f3acef66c4a0!8m2!3d52.1420387!4d-10.2692451!16s%2Fg%2F1q62dzmf7">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <!-- Screen Reader Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Top Announcement Bar: Live Status & Quick Phone -->
+  <aside class="announcement-bar" aria-label="Pub Live Status and Contact Info">
+    <div class="container announcement-content">
+      <div class="announcement-left">
+        <div class="live-status-pill" id="liveStatusPill">
+          <span class="status-indicator"></span>
+          <span id="liveStatusText">Checking Opening Status...</span>
+        </div>
+        <span>Main Street, Dingle, Co. Kerry</span>
+      </div>
+      <div class="announcement-right">
+        <span>Questions or Bicycle Hire? Call: </span>
+        <a href="tel:+353669151316" class="announcement-link">+353 66 915 1316</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Site Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-wrapper">
+      <a href="#home" class="brand-link" aria-label="Foxy John's Home">
+        <img src="./assets/images/logo.svg" alt="Foxy John's Emblem" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">FOXY JOHN'S</span>
+          <span class="brand-sub">PUB • HARDWARE • BIKES • EST. 1899</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#about" class="nav-link">Our Story</a>
+        <a href="#drinks" class="nav-link">Pours &amp; Hardware</a>
+        <a href="#music" class="nav-link">Trad Sessions</a>
+        <a href="#bikes" class="nav-link">Bicycle Hire</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#visit" class="nav-link">Hours &amp; Visit</a>
+        <a href="#faqs" class="nav-link">FAQs</a>
+      </nav>
+
+      <!-- Header CTA Buttons -->
+      <div class="header-cta-group">
+        <a href="tel:+353669151316" class="btn btn-primary header-tel-btn" aria-label="Call Foxy John's">
+          <span aria-hidden="true">📞</span> Call Pub
+        </a>
+        <a href="https://www.google.com/maps/place/Foxy+John's/@52.1420387,-10.27182,17z/data=!3m1!4b1!4m6!3m5!1s0x484ffbc6a20a3047:0x2a60f3acef66c4a0!8m2!3d52.1420387!4d-10.2692451!16s%2Fg%2F1q62dzmf7" target="_blank" rel="noopener noreferrer" class="btn btn-outline header-tel-btn" aria-label="View on Google Maps">
+          <span aria-hidden="true">📍</span> Directions
+        </a>
+        <!-- Mobile Hamburger Toggle -->
+        <button class="menu-toggle-btn" id="menuToggleBtn" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-Over Navigation Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Drawer">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.15);">
+      <span style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--gold-light); font-weight: 800;">FOXY JOHN'S</span>
+      <button class="drawer-close-action" style="color: var(--gold-light); font-size: 1.5rem; padding: 4px 8px;" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-menu-list">
+      <li class="mobile-nav-item"><a href="#about"><span>Our Dual Story</span> <span>&rarr;</span></a></li>
+      <li class="mobile-nav-item"><a href="#drinks"><span>Drinks &amp; Hardware</span> <span>&rarr;</span></a></li>
+      <li class="mobile-nav-item"><a href="#music"><span>Trad Sessions</span> <span>&rarr;</span></a></li>
+      <li class="mobile-nav-item"><a href="#bikes"><span>Bicycle Hire</span> <span>&rarr;</span></a></li>
+      <li class="mobile-nav-item"><a href="#gallery"><span>Photo Gallery</span> <span>&rarr;</span></a></li>
+      <li class="mobile-nav-item"><a href="#visit"><span>Opening Hours &amp; Map</span> <span>&rarr;</span></a></li>
+      <li class="mobile-nav-item"><a href="#faqs"><span>FAQs &amp; Policies</span> <span>&rarr;</span></a></li>
+    </ul>
+
+    <div class="mobile-drawer-contact">
+      <a href="tel:+353669151316" class="btn btn-primary" style="width: 100%;">
+        📞 Call +353 66 915 1316
+      </a>
+      <a href="https://www.google.com/maps/place/Foxy+John's/@52.1420387,-10.27182,17z/data=!3m1!4b1!4m6!3m5!1s0x484ffbc6a20a3047:0x2a60f3acef66c4a0!8m2!3d52.1420387!4d-10.2692451!16s%2Fg%2F1q62dzmf7" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%;">
+        📍 Open Google Maps
+      </a>
+      <div style="font-size: 0.8125rem; color: #a5c2b2; text-align: center; margin-top: 8px;">
+        Main Street, Dingle, Co. Kerry • V92 PD6F
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- =======================================================================
+         Hero Section
+         ======================================================================= -->
+    <section class="hero-section" id="home" aria-labelledby="heroTitle">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-group">
+            <span class="hero-pill" id="heroStatusBadge">Checking live hours...</span>
+            <span class="hero-pill">Est. 1899 • Dingle Town</span>
+            <span class="hero-pill">Wild Atlantic Way</span>
+          </div>
+
+          <h1 class="hero-title" id="heroTitle">
+            Where A Pint of Stout Meets A <span class="highlight">Box of Screws</span>.
+          </h1>
+
+          <p class="hero-lead">
+            Welcome to Foxy John’s — Dingle’s legendary half-pub, half-hardware store and heritage bicycle shop. For over 120 years, locals and travellers have gathered on Main Street for creamy pints of Guinness, authentic Kerry craic, and a few spanners to take home.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#visit" class="btn btn-primary">
+              <span>🕒</span> View Hours &amp; Location
+            </a>
+            <a href="tel:+353669151316" class="btn btn-outline">
+              <span>📞</span> Call +353 66 915 1316
+            </a>
+            <a href="https://www.google.com/maps/place/Foxy+John's/@52.1420387,-10.27182,17z/data=!3m1!4b1!4m6!3m5!1s0x484ffbc6a20a3047:0x2a60f3acef66c4a0!8m2!3d52.1420387!4d-10.2692451!16s%2Fg%2F1q62dzmf7" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color: rgba(255,255,255,0.4);">
+              <span>📍</span> Google Maps
+            </a>
+          </div>
+
+          <!-- Verified Accolades & Highlights -->
+          <div class="hero-proof-bar">
+            <div class="proof-item">
+              <span class="proof-num">4.7 ★</span>
+              <span class="proof-label">1,280+ Google Reviews</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-num">1899</span>
+              <span class="proof-label">Historic Establishment</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-num">Nightly</span>
+              <span class="proof-label">Traditional Irish Music</span>
+            </div>
+            <div class="proof-item">
+              <span class="proof-num">Walk-In</span>
+              <span class="proof-label">Counter Service Only</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Media Showcase Card -->
+        <div class="hero-media-wrapper">
+          <div class="hero-main-card">
+            <!-- Authentic storefront photo with verified SVG fallback -->
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/9/99/Foxy_Johns_-_pub_or_hardware_store%5E_-_geograph.org.uk_-_6057670.jpg" 
+              alt="Foxy John's Traditional Green Storefront on Main Street Dingle" 
+              class="hero-main-img" 
+              data-fallback="./assets/images/storefront.svg"
+              onerror="this.onerror=null; this.src=this.dataset.fallback;"
+              loading="eager"
+            >
+            <div class="hero-overlay-badge">
+              <div>
+                <p class="badge-quote">"The nicest pint of Guinness in Dingle and one of the nicest anywhere."</p>
+                <span class="badge-author">— Verified Patron, County Kerry</span>
+              </div>
+              <span style="font-size: 1.5rem;" aria-hidden="true">🍻</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Notice on Dining, Takeaway & Online Ordering (Authenticity Guarantee)
+         ======================================================================= -->
+    <section class="policy-banner-section" aria-labelledby="policyNoticeHeading">
+      <div class="container">
+        <div class="policy-card">
+          <div class="policy-content">
+            <span class="policy-icon" aria-hidden="true">ℹ️</span>
+            <div>
+              <h2 class="policy-heading" id="policyNoticeHeading">Notice on Dining &amp; Online Ordering</h2>
+              <p class="policy-text">
+                <strong>Foxy John's is an authentic, traditional Irish wet pub, hardware merchant, and bicycle hire shop.</strong> In keeping with our 120-year community heritage, we do <strong>NOT</strong> operate a restaurant kitchen, table booking platform, takeaway service, or online food ordering. All drinks, merchandise, and bicycles are handled on a welcoming, first-come, first-served walk-in basis right at the counter. For general questions or group bike hire enquiries, please phone us directly at <a href="tel:+353669151316" style="color: var(--green-primary); font-weight: 700; text-decoration: underline;">+353 66 915 1316</a>.
+              </p>
+            </div>
+          </div>
+          <div class="policy-action">
+            <a href="#visit" class="btn btn-dark" style="font-size: 0.875rem; padding: 10px 20px;">Plan A Walk-In Visit</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         The Dual Identity: Story & Experience
+         ======================================================================= -->
+    <section class="experience-section" id="about" aria-labelledby="experienceTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">A Dingle Institution</span>
+          <h2 class="section-title" id="experienceTitle">Half Traditional Pub. Half Hardware Store.</h2>
+          <p class="section-desc">
+            Step through the red front door on Main Street and you'll find beer taps pouring creamy stout to your left, and wooden shelves stacked with hammers, nails, spanners, and rat traps to your right. Explore what makes Foxy John's one of the world's most unique drinking spots.
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          <!-- Card 1: The Hardware Counter -->
+          <article class="exp-card">
+            <div class="exp-card-media">
+              <img 
+                src="https://theeuropeanbarguide.com/wp-content/uploads/2023/01/20230120_081738-768x1024.jpg" 
+                alt="Hardware shelves with tools and supplies inside Foxy John's" 
+                class="exp-card-img" 
+                data-fallback="./assets/images/hardware.svg"
+                onerror="this.onerror=null; this.src=this.dataset.fallback;"
+                loading="lazy"
+              >
+              <span class="exp-card-tag">Working Hardware</span>
+            </div>
+            <div class="exp-card-body">
+              <h3 class="exp-card-title">The Hardware Counter</h3>
+              <p class="exp-card-text">
+                Need a box of two-inch screws, an adjustable spanner, rubber wellies, or a roll of twine while nursing a pint? Our hardware side has supplied Dingle craftsmen and farmers since the 19th century. Everything has a price tag, right from the ceiling down to the wooden bins.
+              </p>
+              <div class="exp-card-highlight">
+                <span aria-hidden="true">🔨</span> <span>Tools, fasteners, and gear sold over the bar</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: The Front Bar & Taps -->
+          <article class="exp-card">
+            <div class="exp-card-media">
+              <img 
+                src="./assets/images/pint-stout.svg" 
+                alt="Perfect pint of Irish stout on the wooden bar counter" 
+                class="exp-card-img" 
+                loading="lazy"
+              >
+              <span class="exp-card-tag">The Black Stuff</span>
+            </div>
+            <div class="exp-card-body">
+              <h3 class="exp-card-title">The Front Bar &amp; Taps</h3>
+              <p class="exp-card-text">
+                A narrow central alley of rich timber and low stools. The taps pour cold, velvety Guinness and Murphy's with meticulous two-part pours, alongside local craft beer, crisp ciders, and top-shelf Irish whiskeys like Redbreast and Dingle Single Malt.
+              </p>
+              <div class="exp-card-highlight">
+                <span aria-hidden="true">🍺</span> <span>Voted among Dingle's finest pints of stout</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: The Famous Snug -->
+          <article class="exp-card">
+            <div class="exp-card-media">
+              <img 
+                src="./assets/images/snug-hearth.svg" 
+                alt="The private wooden snug booth with hatch access" 
+                class="exp-card-img" 
+                loading="lazy"
+              >
+              <span class="exp-card-tag">Historic Snug</span>
+            </div>
+            <div class="exp-card-body">
+              <h3 class="exp-card-title">The Legendary Snug</h3>
+              <p class="exp-card-text">
+                Tucked immediately left of the front door is the snug — a private, timber-panelled booth with a front window onto Main Street and its own private drink hatch opening directly to the bar. Snagging this coveted spot early is a true Dingle triumph.
+              </p>
+              <div class="exp-card-highlight">
+                <span aria-hidden="true">🚪</span> <span>Private drink hatch • First come, first served</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: The Peat Fireplace Room -->
+          <article class="exp-card">
+            <div class="exp-card-media">
+              <img 
+                src="./assets/images/trad-session.svg" 
+                alt="Warm fireplace room with traditional Irish instruments" 
+                class="exp-card-img" 
+                loading="lazy"
+              >
+              <span class="exp-card-tag">Peat Fireplace</span>
+            </div>
+            <div class="exp-card-body">
+              <h3 class="exp-card-title">The Roaring Hearth Room</h3>
+              <p class="exp-card-text">
+                Step through to the back room dominated by an open stone fireplace burning fragrant Kerry turf (peat). The warm crackle of burning sods, stone walls, and cozy corners provide the perfect sanctuary on a crisp Atlantic evening.
+              </p>
+              <div class="exp-card-highlight">
+                <span aria-hidden="true">🔥</span> <span>Real turf fire burning daily in cooler weather</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: The Sunny Courtyard -->
+          <article class="exp-card">
+            <div class="exp-card-media">
+              <img 
+                src="./assets/images/bicycle.svg" 
+                alt="Sunny outdoor courtyard and bicycles" 
+                class="exp-card-img" 
+                loading="lazy"
+              >
+              <span class="exp-card-tag">Beer Garden</span>
+            </div>
+            <div class="exp-card-body">
+              <h3 class="exp-card-title">The Courtyard &amp; Beer Garden</h3>
+              <p class="exp-card-text">
+                Past the hearth lies our open-air courtyard patio. On sunny Kerry afternoons, it's filled with good banter, fresh air, and often our friendly resident sheepdog, who is always ready for a game of fetch with patrons enjoying a cold drink.
+              </p>
+              <div class="exp-card-highlight">
+                <span aria-hidden="true">🐕</span> <span>Dog-friendly inside and out • Open-air patio</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Bicycle Hire Depot -->
+          <article class="exp-card">
+            <div class="exp-card-media">
+              <img 
+                src="./assets/images/storefront.svg" 
+                alt="Foxy John's Bicycle Hire shopfront" 
+                class="exp-card-img" 
+                loading="lazy"
+              >
+              <span class="exp-card-tag">Peninsula Touring</span>
+            </div>
+            <div class="exp-card-body">
+              <h3 class="exp-card-title">Heritage Bicycle Hire</h3>
+              <p class="exp-card-text">
+                For decades, visitors have rented reliable touring bicycles from Foxy John's to cycle the world-renowned Slea Head Drive. Grab your bike, a helmet, a route map, and set off along the breathtaking Wild Atlantic Way coastline.
+              </p>
+              <div class="exp-card-highlight">
+                <span aria-hidden="true">🚲</span> <span>Rental bikes, helmets &amp; repair kits on site</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Drinks & Hardware Showcase (Verified Offerings)
+         ======================================================================= -->
+    <section class="drinks-hardware-section" id="drinks" aria-labelledby="drinksMenuTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag light">Counter Offerings</span>
+          <h2 class="section-title light" id="drinksMenuTitle">What's On Tap &amp; On The Shelves</h2>
+          <p class="section-desc light">
+            Whether you fancy a perfectly settled pint of stout, a nip of aged single pot still whiskey, or a box of masonry drill bits, here is what you'll find behind the bar.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="menu-tabs-wrapper" role="tablist">
+          <button class="menu-tab-btn active" data-filter="all" role="tab" aria-selected="true">All Items</button>
+          <button class="menu-tab-btn" data-filter="drinks" role="tab" aria-selected="false">The Drinks &amp; Pours</button>
+          <button class="menu-tab-btn" data-filter="hardware" role="tab" aria-selected="false">The Hardware Catalogue</button>
+        </div>
+
+        <div class="menu-grid">
+          <!-- Category 1: Draught Beer & Stout -->
+          <div class="menu-category-card" data-type="drinks">
+            <div class="menu-category-header">
+              <span class="menu-category-icon" aria-hidden="true">🍺</span>
+              <h3 class="menu-category-title">Draught Beers &amp; Stout</h3>
+            </div>
+            <div class="menu-item-list">
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">The Pint of Guinness Draught</span>
+                  <span class="menu-item-badge">Pub Specialty</span>
+                </div>
+                <p class="menu-item-desc">Poured to creamy perfection with a slow, two-part pour. Velvety head, rich roasted barley aroma, chilled just right.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Murphy's Irish Stout</span>
+                  <span class="menu-item-badge">On Tap</span>
+                </div>
+                <p class="menu-item-desc">A classic Cork stout alternative with a lighter, slightly sweeter malt profile and silky finish.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Smithwick's Red Ale</span>
+                  <span class="menu-item-badge">Irish Classic</span>
+                </div>
+                <p class="menu-item-desc">Traditional ruby-red ale featuring balanced caramel malts, mild hops, and a clean, refreshing palate.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Local Kerry &amp; Irish Craft Beers</span>
+                  <span class="menu-item-badge">Rotating Taps</span>
+                </div>
+                <p class="menu-item-desc">Seasonal selections from regional craft breweries including Dingle Brewing Co. and Kerry independent brewers.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Irish Whiskeys & Spirits -->
+          <div class="menu-category-card" data-type="drinks">
+            <div class="menu-category-header">
+              <span class="menu-category-icon" aria-hidden="true">🥃</span>
+              <h3 class="menu-category-title">Irish Whiskeys &amp; Spirits</h3>
+            </div>
+            <div class="menu-item-list">
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Redbreast 12 Year Old</span>
+                  <span class="menu-item-badge">Single Pot Still</span>
+                </div>
+                <p class="menu-item-desc">Matured in bourbon and oloroso sherry casks; silky dried fruit, Christmas cake spice, and toasted oak.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Dingle Single Malt Whiskey</span>
+                  <span class="menu-item-badge">Local Pride</span>
+                </div>
+                <p class="menu-item-desc">Distilled right here on the Dingle Peninsula. Smooth honeyed malt, citrus zest, and sea salt note.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Green Spot &amp; Powers Gold Label</span>
+                  <span class="menu-item-badge">Heritage Pours</span>
+                </div>
+                <p class="menu-item-desc">Traditional pot still whiskeys known for robust spices, barley sweetness, and classic warmth.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Hot Irish Whiskey &amp; Irish Coffee</span>
+                  <span class="menu-item-badge">Winter Comfort</span>
+                </div>
+                <p class="menu-item-desc">Freshly brewed coffee or hot water, cloves, lemon slice, Demerara sugar, Irish whiskey, and fresh floating cream.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Working Hardware & Fasteners -->
+          <div class="menu-category-card" data-type="hardware">
+            <div class="menu-category-header">
+              <span class="menu-category-icon" aria-hidden="true">🔧</span>
+              <h3 class="menu-category-title">Hardware &amp; Fasteners</h3>
+            </div>
+            <div class="menu-item-list">
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Nails &amp; Screws Sold by Weight</span>
+                  <span class="menu-item-badge">By the Ounce/Kg</span>
+                </div>
+                <p class="menu-item-desc">Weighed out in brown paper bags from our vintage wooden drawer cabinets. Galvanized, brass, or masonry.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Hand Tools &amp; Spanners</span>
+                  <span class="menu-item-badge">In Stock</span>
+                </div>
+                <p class="menu-item-desc">Adjustable wrenches, claw hammers, hand saws, screwdrivers, pliers, and chisels displayed on the walls.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Household Maintenance &amp; Farm Goods</span>
+                  <span class="menu-item-badge">General Goods</span>
+                </div>
+                <p class="menu-item-desc">Balecord twine, padlocks, heavy-duty flashlights, WD-40, rat traps, fuses, lightbulbs, and paint supplies.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Rubber Boots &amp; Outdoor Wear</span>
+                  <span class="menu-item-badge">Kerry Essentials</span>
+                </div>
+                <p class="menu-item-desc">Heavy-duty wellington boots and weather gear for Atlantic rain showers and farm work.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Bike Supplies & Sundries -->
+          <div class="menu-category-card" data-type="hardware">
+            <div class="menu-category-header">
+              <span class="menu-category-icon" aria-hidden="true">🚲</span>
+              <h3 class="menu-category-title">Cycling Gear &amp; Pub Sundries</h3>
+            </div>
+            <div class="menu-item-list">
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Inner Tubes &amp; Puncture Repair Kits</span>
+                  <span class="menu-item-badge">Roadside Lifesaver</span>
+                </div>
+                <p class="menu-item-desc">Crucial supplies for cyclists heading out to Slea Head or Conor Pass. Patches, tire levers, pumps.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Bicycle Locks &amp; Touring Accessories</span>
+                  <span class="menu-item-badge">For Hire / Sale</span>
+                </div>
+                <p class="menu-item-desc">Sturdy cable and U-locks, bicycle bells, handlebar bags, and high-visibility safety straps.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Crisps, Peanuts &amp; Soft Drinks</span>
+                  <span class="menu-item-badge">Pub Snacks</span>
+                </div>
+                <p class="menu-item-desc">Classic Irish pub snacks: Tayto crisps, salted roasted nuts, mineral waters, Irish ginger ale, and tonic.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-top">
+                  <span class="menu-item-name">Locals' Banter &amp; Free Advice</span>
+                  <span class="menu-item-badge">Complimentary</span>
+                </div>
+                <p class="menu-item-desc">Invaluable weather forecasts, coastal wind updates, road advice, and storytelling straight from the counter.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Trad Sessions & Live Irish Music
+         ======================================================================= -->
+    <section class="music-section" id="music" aria-labelledby="musicSectionTitle">
+      <div class="container music-grid">
+        <div class="music-media-wrapper">
+          <img 
+            src="./assets/images/trad-session.svg" 
+            alt="Traditional Irish Fiddle and Bodhran Session at Foxy John's" 
+            class="music-media-img" 
+            loading="lazy"
+          >
+        </div>
+
+        <div class="music-content">
+          <span class="section-tag">Wild Atlantic Craic</span>
+          <h2 class="section-title" id="musicSectionTitle">Traditional Irish Music Amongst the Tools</h2>
+          <p class="section-desc">
+            Music is woven into the soul of Dingle. At Foxy John’s, musicians often squeeze right behind the hardware counter or gather around the peat hearth to play reels, jigs, and ballads. You’ll hear fiddles, accordions, tin whistles, guitars, and the steady heartbeat of the bodhrán.
+          </p>
+
+          <div class="music-info-box">
+            <span class="music-info-title">When To Catch A Session</span>
+            <p class="music-info-desc">
+              Impromptu and scheduled trad sessions occur regularly in the evenings, especially from Thursday through Sunday and throughout festival weekends. As sessions can kick off spontaneously, call in early, grab a stool, and let the melodies carry the night.
+            </p>
+          </div>
+
+          <div class="music-tips-grid">
+            <div class="tip-item">
+              <div class="tip-title">Arrive Early</div>
+              <div class="tip-desc">Seats near the musicians fill fast. Arrive before 8:30 PM to secure a stool.</div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-title">Session Etiquette</div>
+              <div class="tip-desc">Listen closely during quiet tunes, join the chorus on lively ballads, and buy a round.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Bicycle Hire & The Slea Head Route
+         ======================================================================= -->
+    <section class="bike-section" id="bikes" aria-labelledby="bikeSectionTitle">
+      <div class="container bike-grid">
+        <div>
+          <span class="section-tag">Explore County Kerry</span>
+          <h2 class="section-title" id="bikeSectionTitle">Pedal The Dingle Peninsula</h2>
+          <p class="section-desc">
+            There is no better way to experience the jagged cliffs, emerald pastures, and dramatic coastline of the Dingle Peninsula than on two wheels. Foxy John's has provided bicycle hire to intrepid travelers for generations.
+          </p>
+
+          <div class="bike-feature-list">
+            <div class="bike-feature">
+              <span class="bike-feature-icon" aria-hidden="true">🚲</span>
+              <div class="bike-feature-text">
+                <strong>Quality Touring &amp; Hybrid Bicycles:</strong> Well-maintained, sturdy gear-shifted bikes equipped for undulating coastal roads.
+              </div>
+            </div>
+            <div class="bike-feature">
+              <span class="bike-feature-icon" aria-hidden="true">⛑️</span>
+              <div class="bike-feature-text">
+                <strong>Safety Gear &amp; Support Included:</strong> Every rental comes with a fitted helmet, heavy-duty lock, and puncture repair kit.
+              </div>
+            </div>
+            <div class="bike-feature">
+              <span class="bike-feature-icon" aria-hidden="true">🗺️</span>
+              <div class="bike-feature-text">
+                <strong>Direct Access to Slea Head Drive:</strong> Start right outside our door on Main Street and embark on the iconic 47 km loop.
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="tel:+353669151316" class="btn btn-dark">
+              <span>📞</span> Enquire About Bike Hire
+            </a>
+            <a href="#visit" class="btn btn-outline-dark">
+              <span>📍</span> Find Our Shop on Main St
+            </a>
+          </div>
+        </div>
+
+        <div class="bike-card-box">
+          <img 
+            src="./assets/images/bicycle.svg" 
+            alt="Touring Bicycle along the Slea Head Drive coastline" 
+            style="border-radius: var(--radius-md); margin-bottom: 20px;"
+            loading="lazy"
+          >
+          <h3 style="font-size: 1.25rem; margin-bottom: 8px;">The Slea Head Coastal Route</h3>
+          <p style="font-size: 0.875rem; color: var(--text-body); margin-bottom: 14px;">
+            A breathtaking 30-mile journey starting in Dingle, passing Ventry beach, ancient beehive huts, Dunmore Head (the westernmost point of mainland Europe), and offering panoramic vistas of the Blasket Islands before returning to Foxy John’s for a triumphant pint.
+          </p>
+          <div style="font-size: 0.8125rem; font-family: var(--font-mono); color: var(--green-primary); font-weight: 700;">
+            • Distance: ~47 km (30 miles) &bull; Suggested Time: 3.5 – 5 hours
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Photo Gallery (Authentic Atmosphere)
+         ======================================================================= -->
+    <section class="gallery-section" id="gallery" aria-labelledby="galleryTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Visual Heritage</span>
+          <h2 class="section-title" id="galleryTitle">Inside Foxy John's</h2>
+          <p class="section-desc">
+            Explore authentic moments from Foxy John's: the historic facade on Main Street, the hardware shelves, the cozy snug, the warm turf hearth, and our pints of stout. Click any image to view in detail.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Gallery Item 1 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="View Storefront Exterior photo">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/9/99/Foxy_Johns_-_pub_or_hardware_store%5E_-_geograph.org.uk_-_6057670.jpg" 
+              alt="Foxy John's Iconic Green Storefront on Main Street Dingle" 
+              class="gallery-img"
+              data-fallback="./assets/images/storefront.svg"
+              onerror="this.onerror=null; this.src=this.dataset.fallback;"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Main Street Storefront</span>
+              <span class="gallery-sub">Exterior • Main Street</span>
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="View Hardware Shelves photo">
+            <img 
+              src="https://theeuropeanbarguide.com/wp-content/uploads/2023/01/20230120_081738-768x1024.jpg" 
+              alt="Working Hardware Shelves and Tools inside Foxy John's" 
+              class="gallery-img"
+              data-fallback="./assets/images/hardware.svg"
+              onerror="this.onerror=null; this.src=this.dataset.fallback;"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Tools &amp; Hardware Shelves</span>
+              <span class="gallery-sub">Interior • The Hardware Side</span>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="View Pint of Stout photo">
+            <img 
+              src="./assets/images/pint-stout.svg" 
+              alt="Pint of creamy Irish stout on wooden pub bar" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption">The Creamy Black Stuff</span>
+              <span class="gallery-sub">Front Bar • Perfect Pour</span>
+            </div>
+          </div>
+
+          <!-- Gallery Item 4 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="View The Snug photo">
+            <img 
+              src="./assets/images/snug-hearth.svg" 
+              alt="The famous private snug booth inside Foxy John's" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption">The Legendary Snug</span>
+              <span class="gallery-sub">Private Booth &amp; Hatch</span>
+            </div>
+          </div>
+
+          <!-- Gallery Item 5 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="View Trad Music Session photo">
+            <img 
+              src="./assets/images/trad-session.svg" 
+              alt="Live Irish traditional music session with fiddle and bodhran" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Nightly Trad Music</span>
+              <span class="gallery-sub">Back Room • Kerry Melodies</span>
+            </div>
+          </div>
+
+          <!-- Gallery Item 6 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="View Bicycle Hire photo">
+            <img 
+              src="./assets/images/bicycle.svg" 
+              alt="Touring Bicycle Hire for Slea Head Drive" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Bicycle Hire Depot</span>
+              <span class="gallery-sub">Slea Head &amp; Coastal Route</span>
+            </div>
+          </div>
+
+          <!-- Gallery Item 7 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="View Pub Sign photo">
+            <img 
+              src="./assets/images/logo.svg" 
+              alt="Foxy John's Official Pub and Hardware Emblem" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Foxy John's Heritage Crest</span>
+              <span class="gallery-sub">Since 1899 • Co. Kerry</span>
+            </div>
+          </div>
+
+          <!-- Gallery Item 8 -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="View Exterior Evening Glow photo">
+            <img 
+              src="https://scoundrelsfieldguide.com/wp-content/uploads/2021/02/Dingle_-_Foxy_Johns_-_Batch_2_1-scaled.jpg" 
+              alt="Foxy John's evening atmosphere and welcoming entrance" 
+              class="gallery-img"
+              data-fallback="./assets/images/storefront.svg"
+              onerror="this.onerror=null; this.src=this.dataset.fallback;"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-caption">Welcoming Atlantic Glow</span>
+              <span class="gallery-sub">Dingle Town • Evening</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal Component -->
+    <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog">
+      <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close image viewer">&times;</button>
+      <div class="lightbox-container">
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+
+    <!-- =======================================================================
+         Reviews & International Acclaim
+         ======================================================================= -->
+    <section class="reviews-section" aria-labelledby="reviewsTitle">
+      <div class="container">
+        <!-- Google Review Rating Banner -->
+        <div class="google-rating-banner">
+          <div class="rating-big-score">
+            <span class="score-number">4.7</span>
+            <div>
+              <div class="stars-visual" aria-label="4.7 out of 5 stars">★★★★★</div>
+              <div style="font-weight: 700; font-size: 1.125rem;">Rated 4.7 / 5.0 on Google Maps</div>
+              <div style="font-size: 0.8125rem; color: #b7cebf;">Based on 1,280+ verified traveler and local reviews</div>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/place/Foxy+John's/@52.1420387,-10.27182,17z/data=!3m1!4b1!4m6!3m5!1s0x484ffbc6a20a3047:0x2a60f3acef66c4a0!8m2!3d52.1420387!4d-10.2692451!16s%2Fg%2F1q62dzmf7" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Read Google Reviews &rarr;
+          </a>
+        </div>
+
+        <div class="section-header">
+          <span class="section-tag">Visitor Voices</span>
+          <h2 class="section-title" id="reviewsTitle">What Visitors &amp; Travel Guides Say</h2>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote class="review-quote">
+              "The nicest pint of Guinness in Dingle and one of the nicest I've had anywhere to be honest. Great surroundings, competent, civil staff, and a truly unforgettable atmosphere."
+            </blockquote>
+            <div class="review-author-info">
+              <span class="reviewer-name">Local &amp; Visitor Review</span>
+              <span class="reviewer-source">Google Maps Verified</span>
+            </div>
+          </article>
+
+          <!-- Review 2 -->
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote class="review-quote">
+              "Foxy John's is more than just a pub or a hardware store; it's a living piece of Dingle's history. Established in 1899, this iconic spot has seen generations pass through its doors."
+            </blockquote>
+            <div class="review-author-info">
+              <span class="reviewer-name">Love Ireland Guide</span>
+              <span class="reviewer-source">Heritage Feature</span>
+            </div>
+          </article>
+
+          <!-- Review 3 -->
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote class="review-quote">
+              "One of the world's most perfect drinking locations... part hardware store, part bicycle rental, part pub. Knock out your shopping list and your pint all in one place."
+            </blockquote>
+            <div class="review-author-info">
+              <span class="reviewer-name">Scoundrel's Field Guide</span>
+              <span class="reviewer-source">Score: 10 / 10</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Plan Your Visit (Hours, Address, Map & Navigation)
+         ======================================================================= -->
+    <section class="visit-section" id="visit" aria-labelledby="visitSectionTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Welcome to Dingle</span>
+          <h2 class="section-title" id="visitSectionTitle">Plan Your Visit to Main Street</h2>
+          <p class="section-desc">
+            We operate 7 days a week in the heart of Dingle Town. Walk-ins are always warmly welcomed.
+          </p>
+        </div>
+
+        <div class="visit-grid">
+          <!-- Column 1: Opening Hours Card -->
+          <div class="hours-card">
+            <div class="hours-card-title">
+              <h3>Opening Hours</h3>
+              <span class="hero-pill" style="font-size: 0.75rem; padding: 4px 10px;">Local Irish Time</span>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 16px;">
+              Hours verified via Google Maps. Service runs continuously throughout the day.
+            </p>
+
+            <table class="hours-table" aria-label="Weekly opening hours schedule">
+              <tbody>
+                <tr class="hours-row" data-day="1">
+                  <td class="hours-day">Monday</td>
+                  <td class="hours-time">10:30 – 23:30</td>
+                </tr>
+                <tr class="hours-row" data-day="2">
+                  <td class="hours-day">Tuesday</td>
+                  <td class="hours-time">10:30 – 23:30</td>
+                </tr>
+                <tr class="hours-row" data-day="3">
+                  <td class="hours-day">Wednesday</td>
+                  <td class="hours-time">10:30 – 23:30</td>
+                </tr>
+                <tr class="hours-row" data-day="4">
+                  <td class="hours-day">Thursday</td>
+                  <td class="hours-time">10:30 – 23:30</td>
+                </tr>
+                <tr class="hours-row" data-day="5">
+                  <td class="hours-day">Friday</td>
+                  <td class="hours-time">10:30 – 00:30 (Late)</td>
+                </tr>
+                <tr class="hours-row" data-day="6">
+                  <td class="hours-day">Saturday</td>
+                  <td class="hours-time">10:30 – 00:30 (Late)</td>
+                </tr>
+                <tr class="hours-row" data-day="0">
+                  <td class="hours-day">Sunday</td>
+                  <td class="hours-time">12:00 – 23:30</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="practical-tips-box">
+              <div class="tip-line">
+                <span aria-hidden="true">💳</span>
+                <span><strong>Payments:</strong> Credit cards, debit cards, NFC mobile payments accepted.</span>
+              </div>
+              <div class="tip-line">
+                <span aria-hidden="true">♿</span>
+                <span><strong>Accessibility:</strong> Wheelchair accessible entrance and restroom onsite.</span>
+              </div>
+              <div class="tip-line">
+                <span aria-hidden="true">🐶</span>
+                <span><strong>Pet Policy:</strong> Well-behaved dogs warmly welcomed inside and in courtyard.</span>
+              </div>
+              <div class="tip-line">
+                <span aria-hidden="true">🚗</span>
+                <span><strong>Parking:</strong> Free street parking on Main Street and nearby town lots.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Exact Location & Interactive Navigation Card -->
+          <div class="location-card">
+            <div class="address-block">
+              <h3 class="address-name">Foxy John's</h3>
+              <p class="address-street">Main Street, Grove</p>
+              <p class="address-town">Dingle (Daingean Uí Chúis), Co. Kerry, Ireland</p>
+              <span class="eircode-tag">Eircode: V92 PD6F</span>
+            </div>
+
+            <!-- Map View / Fallback Visual -->
+            <div class="map-embed-wrapper">
+              <iframe 
+                class="map-iframe" 
+                title="Google Maps Location of Foxy John's in Dingle"
+                src="https://maps.google.com/maps?q=52.1420387,-10.2692451&z=17&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div style="font-size: 0.8125rem; font-family: var(--font-mono); color: var(--text-muted); margin-bottom: 16px;">
+              GPS Coordinates: 52°08'31.3"N 10°16'09.3"W (52.142039, -10.269245)
+            </div>
+
+            <!-- Clickable Action Buttons -->
+            <div class="map-buttons-grid">
+              <a href="https://www.google.com/maps/place/Foxy+John's/@52.1420387,-10.27182,17z/data=!3m1!4b1!4m6!3m5!1s0x484ffbc6a20a3047:0x2a60f3acef66c4a0!8m2!3d52.1420387!4d-10.2692451!16s%2Fg%2F1q62dzmf7" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 0.875rem;">
+                <span>📍</span> Open Google Maps
+              </a>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=52.1420387,-10.2692451" target="_blank" rel="noopener noreferrer" class="btn btn-dark" style="font-size: 0.875rem;">
+                <span>🧭</span> Get Turn-by-Turn Directions
+              </a>
+              <a href="tel:+353669151316" class="btn btn-outline-dark" style="font-size: 0.875rem; grid-column: 1 / -1;">
+                <span>📞</span> Call +353 66 915 1316
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Frequently Asked Questions (Accordion)
+         ======================================================================= -->
+    <section class="faqs-section" id="faqs" aria-labelledby="faqsTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Know Before You Go</span>
+          <h2 class="section-title" id="faqsTitle">Frequently Asked Questions</h2>
+          <p class="section-desc">
+            Helpful answers to common questions regarding visits, ordering, bicycle rentals, and our unique venue.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1: Food & Online Ordering -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Do you serve food or take online food orders?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>No. Foxy John's is a traditional Irish wet pub and working hardware shop.</strong> We do not operate a commercial kitchen, restaurant menu, or online food ordering platform. We serve drinks (stout, craft beer, whiskey, cocktails, soft drinks) and classic pub snacks (crisps and nuts). Dingle town boasts numerous exceptional seafood restaurants, cafes, and chip shops within walking distance where you can dine before or after stopping in for a pint.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2: Table Reservations -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Can I reserve a table or the famous snug in advance?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>No, we operate strictly on a walk-in, counter-service basis.</strong> The snug, front bar stools, and hearth seats are first-come, first-served. If you wish to snag the famous snug for your group, we recommend arriving earlier in the evening before the main rush. For general group enquiries, feel free to give us a ring at +353 66 915 1316.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3: Bicycle Hire -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>How does bicycle hire work at Foxy John's?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Bicycles can be rented directly from our shopfront on Main Street. We provide sturdy touring bicycles ideal for exploring the Slea Head Drive and Dingle Peninsula loop. Each rental includes a helmet, bicycle lock, and puncture repair kit. Simply walk in or phone us in advance to check daily availability.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4: Pets -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Are dogs allowed inside Foxy John's?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>Yes, absolutely!</strong> Foxy John's is proud to be dog-friendly. Well-behaved dogs on leads are welcome both inside the pub and out in our sunny back courtyard.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5: Live Music -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>When does live traditional music take place?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Live trad sessions occur regularly in the evenings, with peak frequency from Thursday to Sunday nights and holiday weekends. Sessions are often spontaneous gatherings of local and visiting musicians playing fiddle, guitar, flute, and bodhrán.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 6: Can I buy actual hardware? -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Can I really buy actual hardware and tools here?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>Yes!</strong> We remain a functioning hardware merchant. You can purchase nails by the weight, spanners, hammers, flashlights, garden twine, and repair supplies directly over the counter while enjoying your pint.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Verified Social Media Channels
+         ======================================================================= -->
+    <section class="social-section" aria-labelledby="socialTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag light">Connect With Us</span>
+          <h2 class="section-title light" id="socialTitle">Follow Foxy John's Online</h2>
+          <p class="section-desc light">
+            Catch the latest photos from Dingle, live session updates, and stories from behind the counter on our official social channels.
+          </p>
+        </div>
+
+        <div class="social-cards-grid">
+          <!-- Instagram Card -->
+          <a href="https://www.instagram.com/foxy_johns/" target="_blank" rel="noopener noreferrer" class="social-card" aria-label="Visit Foxy John's on Instagram">
+            <div class="social-icon-box" aria-hidden="true">📸</div>
+            <div>
+              <h3 class="social-card-title">Instagram</h3>
+              <p style="font-size: 0.9375rem; color: #e5ede8; margin-bottom: 4px;">Photos of pints, sessions, and Dingle life.</p>
+              <span class="social-card-handle">@foxy_johns &bull; Follow on Instagram &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Facebook Card -->
+          <a href="https://www.facebook.com/Foxy-Johns-162255635562/" target="_blank" rel="noopener noreferrer" class="social-card" aria-label="Visit Foxy John's on Facebook">
+            <div class="social-icon-box" aria-hidden="true">📘</div>
+            <div>
+              <h3 class="social-card-title">Facebook</h3>
+              <p style="font-size: 0.9375rem; color: #e5ede8; margin-bottom: 4px;">Community news, visitor memories &amp; updates.</p>
+              <span class="social-card-handle">Foxy John's &bull; Visit Facebook Page &rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =======================================================================
+       Site Footer
+       ======================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title">FOXY JOHN'S</h3>
+          <p class="footer-desc">
+            Dingle’s legendary half-pub, half-hardware store and bicycle hire since 1899. Preserving genuine Kerry heritage, creamy pints of stout, roaring turf fires, and traditional music on the Wild Atlantic Way.
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--gold-light);">
+            Main Street, Dingle, Co. Kerry, Ireland • V92 PD6F
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#about">The Dual Story</a></li>
+            <li><a href="#drinks">Drinks &amp; Hardware</a></li>
+            <li><a href="#music">Nightly Trad Sessions</a></li>
+            <li><a href="#bikes">Bicycle Hire</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#visit">Hours &amp; Location</a></li>
+            <li><a href="#faqs">FAQs &amp; Policies</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contact &amp; Details</h4>
+          <ul class="footer-links">
+            <li><strong>Telephone:</strong> <a href="tel:+353669151316">+353 66 915 1316</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/foxy_johns/" target="_blank" rel="noopener noreferrer">@foxy_johns</a></li>
+            <li><strong>Facebook:</strong> <a href="https://www.facebook.com/Foxy-Johns-162255635562/" target="_blank" rel="noopener noreferrer">Foxy John's Page</a></li>
+            <li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Foxy+John's/@52.1420387,-10.27182,17z/data=!3m1!4b1!4m6!3m5!1s0x484ffbc6a20a3047:0x2a60f3acef66c4a0!8m2!3d52.1420387!4d-10.2692451!16s%2Fg%2F1q62dzmf7" target="_blank" rel="noopener noreferrer">View 4.7★ Listing</a></li>
+            <li><strong>Eircode:</strong> V92 PD6F</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 1899–2026 Foxy John's Bar, Hardware &amp; Bicycle Hire. All rights reserved.
+        </div>
+        <div>
+          Deployable Static Site • Ready for GitHub Pages
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       Mobile Sticky Quick-Action Bar
+       ======================================================================= -->
+  <nav class="mobile-action-bar" aria-label="Mobile Quick Actions">
+    <a href="tel:+353669151316" class="mob-action-item call">
+      <span class="mob-action-icon" aria-hidden="true">📞</span>
+      <span>Call Pub</span>
+    </a>
+    <a href="https://www.google.com/maps/place/Foxy+John's/@52.1420387,-10.27182,17z/data=!3m1!4b1!4m6!3m5!1s0x484ffbc6a20a3047:0x2a60f3acef66c4a0!8m2!3d52.1420387!4d-10.2692451!16s%2Fg%2F1q62dzmf7" target="_blank" rel="noopener noreferrer" class="mob-action-item">
+      <span class="mob-action-icon" aria-hidden="true">📍</span>
+      <span>Maps</span>
+    </a>
+    <a href="#visit" class="mob-action-item">
+      <span class="mob-action-icon" aria-hidden="true">🕒</span>
+      <span id="mobStatusBadge">Hours</span>
+    </a>
+    <a href="#drinks" class="mob-action-item">
+      <span class="mob-action-icon" aria-hidden="true">🍺</span>
+      <span>Offerings</span>
+    </a>
+  </nav>
+
+  <!-- Interactive JavaScript Engine -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
