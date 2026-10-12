@@ -1302,6 +1302,25 @@ h1, h2, h3, h4 {
   background: var(--cream-bg);
 }
 
+/* Grid items default to min-width:auto, so a single long unbreakable label
+   (e.g. a nowrap button) forces its whole track wider than the viewport and
+   creates horizontal overflow on phones. Allow every grid item to shrink. */
+.hero-grid > *,
+.hero-proof-bar > *,
+.experience-grid > *,
+.menu-grid > *,
+.music-grid > *,
+.music-tips-grid > *,
+.bike-grid > *,
+.gallery-grid > *,
+.reviews-grid > *,
+.visit-grid > *,
+.map-buttons-grid > *,
+.social-cards-grid > *,
+.footer-grid > * {
+  min-width: 0;
+}
+
 .visit-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1451,7 +1470,10 @@ h1, h2, h3, h4 {
   gap: 12px;
   margin-top: auto;
 }
-@media (min-width: 480px) {
+.map-buttons-grid .btn {
+  white-space: normal;
+}
+@media (min-width: 768px) {
   .map-buttons-grid {
     grid-template-columns: 1fr 1fr;
   }
